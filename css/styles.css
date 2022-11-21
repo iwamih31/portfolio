@@ -1,0 +1,111 @@
+body {
+  color: #333;
+  font-family: Verdana, sans-serif;
+  /* margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin: 0px; */
+  /* 全てのmarginを０にする */
+  margin: 0;
+}
+
+header {
+  background-color: #efefef;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.container {
+  /* background-color: pink; */
+  width: 400px;
+  /* 真ん中にそろえる */
+  margin-left: auto;
+  margin-right: auto;
+    /* itemを横並びにする(flexboxをセットする) */
+  display: flex;
+  /* flexbox内のitemを縦方向に中央揃え */
+  align-items: center;
+}
+
+.icon {
+  /* background-color: skyblue; */
+}
+
+.icon img {
+  /* border-radius: 20px; */
+  border-radius: 50%;
+  border-width: 4px;
+  border-style: solid;
+  border-color: white;
+}
+
+.info {
+  /* background-color: tomato; */
+  margin-left: 32px;
+}
+
+.info h1 {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  /* color: blue;
+  color: rgb(0,255,0);
+  color: #00ff00;
+  color: #0f0; */
+}
+
+.info p {
+  /* 全てのmarginを０にする */
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.info ul {
+  /* 全てのmarginを０にする */
+  margin: 0;
+    /* 全てのpaddingを０にする */
+  padding: 0;
+  /* リストの・を消す */
+  list-style-type: none;
+  /* 横並びにする */
+  display: flex;
+}
+
+.info ul li {
+  margin-right: 8px;
+}
+
+.works {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* >で区切ると直下のみ適用となる */
+.works > h1 {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.works > section {
+  margin-bottom: 60px;
+}
+
+.works > section > h1 {
+  font-weight: bold;
+}
+
+.works p {
+  line-height: 1.8;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 60px;
+  color: gray;
+}
